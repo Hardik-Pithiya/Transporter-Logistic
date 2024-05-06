@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-06 12:45:57.681551",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cargo_material",
+  "packing_material",
+  "length",
+  "height",
+  "rate",
+  "booking_id",
+  "column_break_txxy",
+  "packing_type",
+  "unit_qty",
+  "width",
+  "act_wt",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "cargo_material",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Cargo Material",
+   "options": "Item"
+  },
+  {
+   "fieldname": "packing_material",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Packing Material",
+   "options": "Item"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Length"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "fieldname": "booking_id",
+   "fieldtype": "Link",
+   "label": "Booking Id",
+   "options": "Booking Shipment"
+  },
+  {
+   "fieldname": "column_break_txxy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "packing_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Packing Type",
+   "options": "Packing Type"
+  },
+  {
+   "fieldname": "unit_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit (Qty)"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Width"
+  },
+  {
+   "fieldname": "act_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Act Wt."
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-06 12:45:57.681551",
+ "modified_by": "Administrator",
+ "module": "Transporter",
+ "name": "Package Material Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

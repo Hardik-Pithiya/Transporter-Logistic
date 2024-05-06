@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-06 12:45:10.592273",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "material_name",
+  "length",
+  "height",
+  "cargo_amount_invoice_amount",
+  "booking_id",
+  "column_break_egzg",
+  "unitqty",
+  "width",
+  "act_wt",
+  "invoice_attachment"
+ ],
+ "fields": [
+  {
+   "fieldname": "material_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Material Name",
+   "options": "Item"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Length"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Height"
+  },
+  {
+   "fieldname": "cargo_amount_invoice_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cargo Amount (Invoice Amount)"
+  },
+  {
+   "fieldname": "booking_id",
+   "fieldtype": "Link",
+   "label": "Booking Id",
+   "options": "Booking Shipment"
+  },
+  {
+   "fieldname": "column_break_egzg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unitqty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Unit(Qty)"
+  },
+  {
+   "fieldname": "width",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Width"
+  },
+  {
+   "fieldname": "act_wt",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Act Wt."
+  },
+  {
+   "fieldname": "invoice_attachment",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Invoice Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-06 12:45:10.592273",
+ "modified_by": "Administrator",
+ "module": "Transporter",
+ "name": "Cargo Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

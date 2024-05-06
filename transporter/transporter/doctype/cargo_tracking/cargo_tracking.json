@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-06 12:44:40.344788",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "series",
+  "booking_id",
+  "column_break_dorl",
+  "date",
+  "current_place_or_port",
+  "section_break_klhw",
+  "cargo_details",
+  "section_break_pkxr",
+  "package_material_details",
+  "section_break_m8wu",
+  "amended_from",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CT-###"
+  },
+  {
+   "fieldname": "booking_id",
+   "fieldtype": "Table MultiSelect",
+   "label": "Booking ID",
+   "options": "Booking ID"
+  },
+  {
+   "fieldname": "column_break_dorl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "current_place_or_port",
+   "fieldtype": "Data",
+   "label": "Current Place or Port"
+  },
+  {
+   "fieldname": "section_break_klhw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cargo_details",
+   "fieldtype": "Table",
+   "label": "Cargo Details",
+   "options": "Cargo Details"
+  },
+  {
+   "fieldname": "section_break_pkxr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "package_material_details",
+   "fieldtype": "Table",
+   "label": "Package Material Details",
+   "options": "Package Material Details"
+  },
+  {
+   "fieldname": "section_break_m8wu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cargo Tracking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cargo Tracking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-06 12:44:40.344788",
+ "modified_by": "Administrator",
+ "module": "Transporter",
+ "name": "Cargo Tracking",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,349 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-05-06 12:40:29.223549",
+ "default_view": "List",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "delivery_status",
+  "column_break_fgga",
+  "booking_date",
+  "transportation_mode",
+  "details_section",
+  "consignor_name",
+  "consignor_address",
+  "address_details_consignor",
+  "cargo_recieving_date",
+  "distance_in_km",
+  "column_break_wgfg",
+  "consignee_name",
+  "consignee_address",
+  "address_details_consignee",
+  "cargo_delivery_date",
+  "section_break_nxoh",
+  "cargo_details",
+  "section_break_vsfj",
+  "package_material_details",
+  "payment_details_section",
+  "frieght",
+  "brokerage",
+  "gst",
+  "column_break_nzmn",
+  "labour",
+  "net_total",
+  "grand_total",
+  "accounts_details_section",
+  "dr_to",
+  "column_break_dces",
+  "cr_to",
+  "section_break_dmwu",
+  "amended_from",
+  "transporter_details_tab",
+  "road_transporter_details_section",
+  "vehicle_no",
+  "driver_contact_details",
+  "column_break_mhbr",
+  "driver_name",
+  "lr_no",
+  "sea_cargo_details_section",
+  "vessel_no",
+  "captain_contact_details",
+  "column_break_cruj",
+  "captain_name",
+  "air_cargo_details_section",
+  "air_lines_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Booking ID",
+   "options": "BS-###"
+  },
+  {
+   "fieldname": "delivery_status",
+   "fieldtype": "Select",
+   "label": "Delivery Status",
+   "options": "Cargo Booking Confirm\nCargo Shipped\nCargo In Transit\nCargo is Delivered"
+  },
+  {
+   "fieldname": "column_break_fgga",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date"
+  },
+  {
+   "fieldname": "transportation_mode",
+   "fieldtype": "Select",
+   "label": "Transportation Mode",
+   "options": "Road\nSea Cargo\nAir Cargo"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "consignor_name",
+   "fieldtype": "Data",
+   "label": "Consignor name"
+  },
+  {
+   "fieldname": "consignor_address",
+   "fieldtype": "Link",
+   "label": "Consignor Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address_details_consignor",
+   "fieldtype": "Small Text",
+   "label": "Address Details Consignor"
+  },
+  {
+   "fieldname": "cargo_recieving_date",
+   "fieldtype": "Date",
+   "label": "Cargo Recieving Date"
+  },
+  {
+   "fieldname": "distance_in_km",
+   "fieldtype": "Float",
+   "label": "Distance In KM"
+  },
+  {
+   "fieldname": "column_break_wgfg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consignee_name",
+   "fieldtype": "Data",
+   "label": "Consignee Name"
+  },
+  {
+   "fieldname": "consignee_address",
+   "fieldtype": "Link",
+   "label": "Consignee Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "address_details_consignee",
+   "fieldtype": "Small Text",
+   "label": "Address Details Consignee"
+  },
+  {
+   "fieldname": "cargo_delivery_date",
+   "fieldtype": "Data",
+   "label": "Cargo Delivery Date"
+  },
+  {
+   "fieldname": "section_break_nxoh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cargo_details",
+   "fieldtype": "Table",
+   "label": "Cargo Details ",
+   "options": "Cargo Details"
+  },
+  {
+   "fieldname": "section_break_vsfj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "package_material_details",
+   "fieldtype": "Table",
+   "label": "Package Material Details ",
+   "options": "Package Material Details"
+  },
+  {
+   "fieldname": "payment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Payment Details"
+  },
+  {
+   "fieldname": "frieght",
+   "fieldtype": "Data",
+   "label": "Frieght"
+  },
+  {
+   "fieldname": "brokerage",
+   "fieldtype": "Data",
+   "label": "Brokerage"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Data",
+   "label": "GST"
+  },
+  {
+   "fieldname": "column_break_nzmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "labour",
+   "fieldtype": "Data",
+   "label": "Labour"
+  },
+  {
+   "fieldname": "net_total",
+   "fieldtype": "Float",
+   "label": "Net Total"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Data",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "accounts_details_section",
+   "fieldtype": "Section Break",
+   "label": "Accounts Details"
+  },
+  {
+   "fieldname": "dr_to",
+   "fieldtype": "Link",
+   "label": "Dr. to",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_dces",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cr_to",
+   "fieldtype": "Link",
+   "label": "Cr. to",
+   "options": "Account"
+  },
+  {
+   "fieldname": "section_break_dmwu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Booking Shipment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "transporter_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Transporter Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "road_transporter_details_section",
+   "fieldtype": "Section Break",
+   "label": "Road Transporter Details"
+  },
+  {
+   "fieldname": "vehicle_no",
+   "fieldtype": "Data",
+   "label": "Vehicle No"
+  },
+  {
+   "fieldname": "driver_contact_details",
+   "fieldtype": "Data",
+   "label": "Driver Contact Details"
+  },
+  {
+   "fieldname": "column_break_mhbr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driver_name",
+   "fieldtype": "Data",
+   "label": "Driver Name"
+  },
+  {
+   "fieldname": "lr_no",
+   "fieldtype": "Data",
+   "label": "LR. No"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "sea_cargo_details_section",
+   "fieldtype": "Section Break",
+   "label": "Sea Cargo Details"
+  },
+  {
+   "fieldname": "vessel_no",
+   "fieldtype": "Data",
+   "label": "Vessel No"
+  },
+  {
+   "fieldname": "captain_contact_details",
+   "fieldtype": "Data",
+   "label": "Captain Contact Details"
+  },
+  {
+   "fieldname": "column_break_cruj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "captain_name",
+   "fieldtype": "Data",
+   "label": "Captain Name"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "air_cargo_details_section",
+   "fieldtype": "Section Break",
+   "label": "Air Cargo Details"
+  },
+  {
+   "fieldname": "air_lines_name",
+   "fieldtype": "Data",
+   "label": "Air lines Name"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Booking Shipment",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-06 12:40:29.223549",
+ "modified_by": "Administrator",
+ "module": "Transporter",
+ "name": "Booking Shipment",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-06 12:43:38.052621",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pick_up_id",
+  "booking_id",
+  "column_break_ixng",
+  "pick_up_date",
+  "section_break_ofpg",
+  "cargo_details",
+  "section_break_iwxq",
+  "package_material_details",
+  "section_break_egbe",
+  "documents",
+  "section_break_5ln6",
+  "amended_from",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "pick_up_id",
+   "fieldtype": "Select",
+   "label": "Pick Up ID",
+   "options": "CPUP-###"
+  },
+  {
+   "fieldname": "booking_id",
+   "fieldtype": "Table MultiSelect",
+   "label": "Booking ID",
+   "options": "Booking ID"
+  },
+  {
+   "fieldname": "column_break_ixng",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "pick_up_date",
+   "fieldtype": "Date",
+   "label": "Pick Up Date"
+  },
+  {
+   "fieldname": "section_break_ofpg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cargo_details",
+   "fieldtype": "Table",
+   "label": "Cargo Details",
+   "options": "Cargo Details"
+  },
+  {
+   "fieldname": "section_break_iwxq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "package_material_details",
+   "fieldtype": "Table",
+   "label": "Package Material Details",
+   "options": "Package Material Details"
+  },
+  {
+   "fieldname": "section_break_egbe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Attach",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "section_break_5ln6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cargo Pick up",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Cargo Pick up",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-05-06 12:43:38.052621",
+ "modified_by": "Administrator",
+ "module": "Transporter",
+ "name": "Cargo Pick up",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
