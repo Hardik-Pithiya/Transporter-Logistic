@@ -9,6 +9,7 @@
  "field_order": [
   "naming_series",
   "delivery_status",
+  "sales_order",
   "column_break_fgga",
   "booking_date",
   "transportation_mode",
@@ -39,8 +40,6 @@
   "dr_to",
   "column_break_dces",
   "cr_to",
-  "section_break_dmwu",
-  "amended_from",
   "transporter_details_tab",
   "road_transporter_details_section",
   "vehicle_no",
@@ -90,7 +89,7 @@
    "collapsible": 1,
    "fieldname": "details_section",
    "fieldtype": "Section Break",
-   "label": "Details"
+   "label": "Consignee Details"
   },
   {
    "fieldname": "consignor_name",
@@ -224,10 +223,6 @@
    "options": "Account"
   },
   {
-   "fieldname": "section_break_dmwu",
-   "fieldtype": "Section Break"
-  },
-  {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
@@ -317,12 +312,18 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "sales_order",
+   "fieldtype": "Link",
+   "label": "Sales Order",
+   "options": "Sales Order"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-05-06 12:40:29.223549",
+ "modified": "2024-05-08 18:24:43.550847",
  "modified_by": "Administrator",
  "module": "Transporter",
  "name": "Booking Shipment",

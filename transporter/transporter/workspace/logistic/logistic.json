@@ -7,8 +7,9 @@
  "doctype": "Workspace",
  "for_user": "",
  "hide_custom": 0,
+ "icon": "quantity-1",
  "idx": 0,
- "indicator_color": "green",
+ "indicator_color": "",
  "is_hidden": 0,
  "label": "Logistic",
  "links": [
@@ -91,7 +92,7 @@
    "type": "Link"
   }
  ],
- "modified": "2024-05-06 12:48:54.127882",
+ "modified": "2024-05-06 15:12:58.285306",
  "modified_by": "Administrator",
  "module": "Transporter",
  "name": "Logistic",
